@@ -10,18 +10,18 @@ import Foundation
 //MARK: - ProgramsArray
 
 let programsNameArray = ["Разминка", "Знакомство с гирей", "Все тело",
-                 "Продвинутая", "Мышцы кора", "Стальные руки",
-                 "Сильные ноги"]
+                         "Продвинутая", "Мышцы кора", "Стальные руки",
+                         "Сильные ноги"]
 
-let programsImageArray = ["warmup", "basic", "body",
-                  "professional", "core", "hand",
-                  "legs"]
+let programsImageArray = ["warmup", "basic", "body","professional",
+                          "core", "hand","legs"]
 
 //MARK: - WarmupArray
 
-let warmupArray = [
-    ["warmup"],
-    ["Danya", "Sanya", "Vanya", "Svatopolck"]
-]
+let warmapNameArray = ["Наклоны головы", "Круговые вращения головой", "Вращения плечами",
+                       "Круговые вращения руками", "Вращения предплечий", "Вращения в кистях",
+                       "Наклоны", "Круговые движения тазом",
+                       "Вращение коленей", "Приседания без веса", "Подъем на носки"]
 
-let warmapHeader = "warmaup"
+let warmupRepetArray = ["x8", "x8", "x10", "x10", "x10", "x10",
+                        "x8", "x10", "x10", "x10", "x10"]

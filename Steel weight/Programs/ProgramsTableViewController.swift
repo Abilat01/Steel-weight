@@ -43,7 +43,7 @@ class ProgramsTableViewController: UITableViewController {
         
         if(indexPath.row) == 0 {
             let sturybordWarmap = UIStoryboard(name: "Main", bundle: nil)
-            let controllerWurmap = sturybordWarmap.instantiateViewController(identifier: "Wurmap") as! WarmapViewController
+            let controllerWurmap = sturybordWarmap.instantiateViewController(identifier: "Wurmap") as! WarmupTableViewController
             self.navigationController?.pushViewController(controllerWurmap, animated: true)
         }
     }
