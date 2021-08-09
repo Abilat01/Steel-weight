@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="26x-Fe-eBy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -57,7 +57,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jc9-Iz-bJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6945" y="413"/>
+            <point key="canvasLocation" x="-7704" y="1112"/>
         </scene>
         <!--Разминка-->
         <scene sceneID="WOM-y7-fBL">
@@ -140,7 +140,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNK-8F-9LX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9013" y="1112"/>
+            <point key="canvasLocation" x="-9101" y="413"/>
         </scene>
         <!--Программы-->
         <scene sceneID="jaP-eA-B6m">
@@ -161,7 +161,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ApY-wF-J7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7703" y="413"/>
+            <point key="canvasLocation" x="-7704" y="413"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H6C-Nf-1On">
@@ -179,7 +179,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFU-x9-Rlk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9722" y="1112"/>
+            <point key="canvasLocation" x="-9974" y="413"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YJb-tT-oZZ">
@@ -192,18 +192,18 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="uO4-lY-37S" kind="relationship" relationship="rootViewController" id="11o-kS-l3M"/>
+                        <segue destination="uO4-lY-37S" kind="relationship" relationship="rootViewController" id="etG-JD-fHV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCR-6V-GPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9013" y="1821"/>
+            <point key="canvasLocation" x="-9975" y="1152"/>
         </scene>
-        <!--Разминка-->
+        <!--Мышцы кора-->
         <scene sceneID="lqM-bI-iSj">
             <objects>
-                <tableViewController storyboardIdentifier="Core" id="uO4-lY-37S" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v5h-ab-Phj" customClass="WarmupTableView" customModule="Steel_weight" customModuleProvider="target">
+                <tableViewController storyboardIdentifier="Core" id="uO4-lY-37S" customClass="CoreTableViewController" customModule="Steel_weight" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v5h-ab-Phj" customClass="CoreTableView" customModule="Steel_weight" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -211,7 +211,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basic" translatesAutoresizingMaskIntoConstraints="NO" id="lZV-9Z-rY8">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="core" translatesAutoresizingMaskIntoConstraints="NO" id="lZV-9Z-rY8">
                                     <rect key="frame" x="0.0" y="-20" width="414" height="200"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="200" id="ppj-xj-8ez"/>
@@ -226,7 +226,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WarmupCell" rowHeight="85" id="icg-Vh-zxX" customClass="WarmupCell" customModule="Steel_weight" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoreCell" rowHeight="85" id="icg-Vh-zxX" customClass="CoreCell" customModule="Steel_weight" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="204.5" width="414" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="icg-Vh-zxX" id="1I9-3I-h9Y">
@@ -264,28 +264,29 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="warmapNameLabel" destination="fsG-D5-deC" id="cLk-8n-rom"/>
-                                    <outlet property="warmapRepetLabel" destination="Kdd-pX-fg6" id="Z4n-SJ-ZV2"/>
-                                    <outlet property="warmupImage" destination="90b-oO-jeB" id="vSB-wZ-gXr"/>
+                                    <outlet property="coreImage" destination="90b-oO-jeB" id="3Ds-jF-Phu"/>
+                                    <outlet property="coreNameLabel" destination="fsG-D5-deC" id="BsE-hU-PfF"/>
+                                    <outlet property="coreRepetLabel" destination="Kdd-pX-fg6" id="R9d-Bo-T76"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="uO4-lY-37S" id="7BA-Tf-PbB"/>
                             <outlet property="delegate" destination="uO4-lY-37S" id="xe2-NA-YF1"/>
-                            <outlet property="height" destination="ppj-xj-8ez" id="XkY-vG-Dc1"/>
+                            <outlet property="height" destination="ppj-xj-8ez" id="FQD-DT-aEf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Разминка" id="rek-aV-v2B"/>
+                    <navigationItem key="navigationItem" title="Мышцы кора" id="rek-aV-v2B"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nb5-Aa-oIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8106" y="1821"/>
+            <point key="canvasLocation" x="-9101" y="1152"/>
         </scene>
     </scenes>
     <resources>
         <image name="basic" width="525.5" height="370"/>
         <image name="book.closed" catalog="system" width="115" height="128"/>
+        <image name="core" width="512" height="512"/>
         <image name="warmupWar" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

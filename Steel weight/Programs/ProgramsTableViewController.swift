@@ -42,9 +42,13 @@ class ProgramsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if(indexPath.row) == 0 {
-            let sturybordWarmap = UIStoryboard(name: "Main", bundle: nil)
+            let sturybordWarmap = UIStoryboard(name: "Programs", bundle: nil)
             let controllerWurmap = sturybordWarmap.instantiateViewController(identifier: "Wurmap") as! WarmupTableViewController
             self.navigationController?.pushViewController(controllerWurmap, animated: true)
+        } else if(indexPath.row) == 4 {
+            let sturybordCore = UIStoryboard(name: "Programs", bundle: nil)
+            let controllerCore = sturybordCore.instantiateViewController(identifier: "Core") as! CoreTableViewController
+            self.navigationController?.pushViewController(controllerCore, animated: true)
         }
     }
     
