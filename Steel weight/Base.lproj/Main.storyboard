@@ -146,21 +146,68 @@
             </objects>
             <point key="canvasLocation" x="-8381" y="704"/>
         </scene>
-        <!--Warmap View Controller-->
+        <!--Разминка-->
         <scene sceneID="25s-kj-uSY">
             <objects>
-                <viewController storyboardIdentifier="Wurmap" id="gwy-CZ-U8t" customClass="WarmapViewController" customModule="Steel_weight" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Wurmap" id="gwy-CZ-U8t" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cec-nZ-ZhE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="omz-NG-gKl">
+                                <rect key="frame" x="0.0" y="288" width="414" height="525"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="525" id="KAL-TT-ila"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WarmupCell" id="kjE-fG-WaK">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kjE-fG-WaK" id="1Mc-rW-stj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRF-9b-84Z">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warmupWar" translatesAutoresizingMaskIntoConstraints="NO" id="pKq-Sx-ZAx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="pKq-Sx-ZAx" firstAttribute="top" secondItem="bRF-9b-84Z" secondAttribute="top" id="c9B-88-EaN"/>
+                                    <constraint firstAttribute="trailing" secondItem="pKq-Sx-ZAx" secondAttribute="trailing" id="fmo-0t-JY6"/>
+                                    <constraint firstItem="pKq-Sx-ZAx" firstAttribute="leading" secondItem="bRF-9b-84Z" secondAttribute="leading" id="rfg-Lf-KDm"/>
+                                    <constraint firstAttribute="bottom" secondItem="pKq-Sx-ZAx" secondAttribute="bottom" id="uic-F4-RmD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A0e-96-TN0"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="omz-NG-gKl" firstAttribute="leading" secondItem="bRF-9b-84Z" secondAttribute="leading" id="1iS-Qw-oJi"/>
+                            <constraint firstItem="omz-NG-gKl" firstAttribute="top" secondItem="bRF-9b-84Z" secondAttribute="bottom" id="34G-CQ-1qO"/>
+                            <constraint firstItem="omz-NG-gKl" firstAttribute="top" secondItem="bRF-9b-84Z" secondAttribute="bottom" id="EAc-qD-jmH"/>
+                            <constraint firstItem="omz-NG-gKl" firstAttribute="trailing" secondItem="bRF-9b-84Z" secondAttribute="trailing" id="IBu-eV-DeU"/>
+                            <constraint firstItem="omz-NG-gKl" firstAttribute="leading" secondItem="A0e-96-TN0" secondAttribute="leading" id="NTq-6a-3mJ"/>
+                            <constraint firstItem="bRF-9b-84Z" firstAttribute="top" secondItem="A0e-96-TN0" secondAttribute="top" id="UqT-1C-bGx"/>
+                            <constraint firstItem="omz-NG-gKl" firstAttribute="trailing" secondItem="A0e-96-TN0" secondAttribute="trailing" id="ZVv-iK-KkM"/>
+                            <constraint firstItem="omz-NG-gKl" firstAttribute="bottom" secondItem="A0e-96-TN0" secondAttribute="bottom" id="oB6-f1-1Xf"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="L3H-q6-kcZ"/>
+                    <navigationItem key="navigationItem" title="Разминка" id="L3H-q6-kcZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="omz-NG-gKl" id="XGB-P7-g2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AU2-b2-blQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7623" y="1435"/>
+            <point key="canvasLocation" x="-7623.188405797102" y="1434.375"/>
         </scene>
     </scenes>
     <resources>
@@ -168,11 +215,12 @@
         <image name="book" catalog="system" width="128" height="102"/>
         <image name="book.closed" catalog="system" width="115" height="128"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="warmupWar" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
