@@ -45,10 +45,14 @@ class ProgramsTableViewController: UITableViewController {
             let sturybordWarmap = UIStoryboard(name: "Programs", bundle: nil)
             let controllerWurmap = sturybordWarmap.instantiateViewController(identifier: "Wurmap") as! WarmupTableViewController
             self.navigationController?.pushViewController(controllerWurmap, animated: true)
-        } else if(indexPath.row) == 4 {
-            let sturybordCore = UIStoryboard(name: "Programs", bundle: nil)
-            let controllerCore = sturybordCore.instantiateViewController(identifier: "Core") as! CoreTableViewController
-            self.navigationController?.pushViewController(controllerCore, animated: true)
+        } else if(indexPath.row) == 1 {
+            let sturibordBasic = UIStoryboard(name: "Programs", bundle: nil)
+            let controlerBasic = sturibordBasic.instantiateViewController(identifier: "Basic")
+            self.navigationController?.pushViewController(controlerBasic, animated: true)
+        } else if(indexPath.row) == 2 {
+            let storuborBody = UIStoryboard(name: "Programs", bundle: nil)
+            let controlerBody = storuborBody.instantiateViewController(identifier: "Body")
+            self.navigationController?.pushViewController(controlerBody, animated: true)
         }
     }
     

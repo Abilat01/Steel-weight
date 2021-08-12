@@ -1,19 +1,18 @@
 //
-//  CoreCell.swift
+//  BasicTableViewCell.swift
 //  Steel weight
 //
-//  Created by Danya on 09.08.2021.
+//  Created by Danya on 12.08.2021.
 //
 
 import UIKit
 
-class CoreCell: UITableViewCell {
+class BasicTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var musculeLabel: UILabel!
     
-    @IBOutlet weak var coreImage: UIImageView!
-    @IBOutlet weak var coreNameLabel: UILabel!
-    @IBOutlet weak var coreRepetLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
