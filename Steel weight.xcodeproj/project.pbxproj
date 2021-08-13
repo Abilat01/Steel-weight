@@ -19,6 +19,10 @@
 		3BB23E3A26C5899A006027E1 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB23E3926C5899A006027E1 /* BasicTableViewCell.swift */; };
 		3BB23E3E26C595F3006027E1 /* BodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB23E3D26C595F3006027E1 /* BodyViewController.swift */; };
 		3BB23E4026C59600006027E1 /* BodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB23E3F26C59600006027E1 /* BodyTableViewCell.swift */; };
+		3BB23E4326C59ECB006027E1 /* ProTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB23E4226C59ECB006027E1 /* ProTableViewCell.swift */; };
+		3BB23E4726C59F0D006027E1 /* ProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB23E4626C59F0D006027E1 /* ProViewController.swift */; };
+		3BB23E4A26C5A6D0006027E1 /* CoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB23E4926C5A6D0006027E1 /* CoreViewController.swift */; };
+		3BB23E4C26C5A8A5006027E1 /* CoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB23E4B26C5A8A5006027E1 /* CoreTableViewCell.swift */; };
 		3BBEBA2026C15FB000C8856E /* WarmupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEBA1F26C15FB000C8856E /* WarmupTableView.swift */; };
 		3BBEBA2426C1620E00C8856E /* WarmupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEBA2326C1620E00C8856E /* WarmupTableViewController.swift */; };
 		3BBEBA2626C180B300C8856E /* WarmupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEBA2526C180B300C8856E /* WarmupCell.swift */; };
@@ -40,6 +44,10 @@
 		3BB23E3926C5899A006027E1 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		3BB23E3D26C595F3006027E1 /* BodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyViewController.swift; sourceTree = "<group>"; };
 		3BB23E3F26C59600006027E1 /* BodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTableViewCell.swift; sourceTree = "<group>"; };
+		3BB23E4226C59ECB006027E1 /* ProTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProTableViewCell.swift; sourceTree = "<group>"; };
+		3BB23E4626C59F0D006027E1 /* ProViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProViewController.swift; sourceTree = "<group>"; };
+		3BB23E4926C5A6D0006027E1 /* CoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreViewController.swift; sourceTree = "<group>"; };
+		3BB23E4B26C5A8A5006027E1 /* CoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTableViewCell.swift; sourceTree = "<group>"; };
 		3BBEBA1F26C15FB000C8856E /* WarmupTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupTableView.swift; sourceTree = "<group>"; };
 		3BBEBA2326C1620E00C8856E /* WarmupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupTableViewController.swift; sourceTree = "<group>"; };
 		3BBEBA2526C180B300C8856E /* WarmupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupCell.swift; sourceTree = "<group>"; };
@@ -81,8 +89,10 @@
 				3BBEBA1E26C10FA500C8856E /* Warmup */,
 				3BB23E3B26C589BA006027E1 /* Basic */,
 				3BB23E3C26C595CE006027E1 /* Bodi */,
-				3B913DC626B9ABFE009CE1DB /* Main.storyboard */,
+				3BB23E4126C59E96006027E1 /* Pro */,
+				3BB23E4826C5A6BF006027E1 /* Core */,
 				3BBEBA2726C197B500C8856E /* Programs.storyboard */,
+				3B913DC626B9ABFE009CE1DB /* Main.storyboard */,
 				3B67544A26C014F000CE01C1 /* MainModelArray.swift */,
 				3B913DC926B9ABFF009CE1DB /* Assets.xcassets */,
 				3B913DCB26B9ABFF009CE1DB /* LaunchScreen.storyboard */,
@@ -116,6 +126,24 @@
 				3BB23E3F26C59600006027E1 /* BodyTableViewCell.swift */,
 			);
 			path = Bodi;
+			sourceTree = "<group>";
+		};
+		3BB23E4126C59E96006027E1 /* Pro */ = {
+			isa = PBXGroup;
+			children = (
+				3BB23E4626C59F0D006027E1 /* ProViewController.swift */,
+				3BB23E4226C59ECB006027E1 /* ProTableViewCell.swift */,
+			);
+			path = Pro;
+			sourceTree = "<group>";
+		};
+		3BB23E4826C5A6BF006027E1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3BB23E4926C5A6D0006027E1 /* CoreViewController.swift */,
+				3BB23E4B26C5A8A5006027E1 /* CoreTableViewCell.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		3BBCC2D126C0525B0049C359 /* Programs */ = {
@@ -208,6 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB23E4726C59F0D006027E1 /* ProViewController.swift in Sources */,
+				3BB23E4326C59ECB006027E1 /* ProTableViewCell.swift in Sources */,
 				3B67544926C0120000CE01C1 /* ProgramsTableViewCell.swift in Sources */,
 				3BB23E3826C5898B006027E1 /* BasicViewController.swift in Sources */,
 				3BBEBA2426C1620E00C8856E /* WarmupTableViewController.swift in Sources */,
@@ -220,6 +250,8 @@
 				3B67544726C0112B00CE01C1 /* ProgramsTableViewController.swift in Sources */,
 				3BBEBA2626C180B300C8856E /* WarmupCell.swift in Sources */,
 				3BB23E4026C59600006027E1 /* BodyTableViewCell.swift in Sources */,
+				3BB23E4C26C5A8A5006027E1 /* CoreTableViewCell.swift in Sources */,
+				3BB23E4A26C5A6D0006027E1 /* CoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

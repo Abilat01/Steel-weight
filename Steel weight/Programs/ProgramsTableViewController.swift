@@ -46,13 +46,21 @@ class ProgramsTableViewController: UITableViewController {
             let controllerWurmap = sturybordWarmap.instantiateViewController(identifier: "Wurmap") as! WarmupTableViewController
             self.navigationController?.pushViewController(controllerWurmap, animated: true)
         } else if(indexPath.row) == 1 {
-            let sturibordBasic = UIStoryboard(name: "Programs", bundle: nil)
-            let controlerBasic = sturibordBasic.instantiateViewController(identifier: "Basic")
+            let sturybordBasic = UIStoryboard(name: "Programs", bundle: nil)
+            let controlerBasic = sturybordBasic.instantiateViewController(identifier: "Basic")
             self.navigationController?.pushViewController(controlerBasic, animated: true)
         } else if(indexPath.row) == 2 {
-            let storuborBody = UIStoryboard(name: "Programs", bundle: nil)
-            let controlerBody = storuborBody.instantiateViewController(identifier: "Body")
+            let storyborBody = UIStoryboard(name: "Programs", bundle: nil)
+            let controlerBody = storyborBody.instantiateViewController(identifier: "Body")
             self.navigationController?.pushViewController(controlerBody, animated: true)
+        } else if(indexPath.row) == 3 {
+            let storybordPro = UIStoryboard(name: "Programs", bundle: nil)
+            let controlerPro = storybordPro.instantiateViewController(identifier: "Pro")
+            self.navigationController?.pushViewController(controlerPro, animated: true)
+        } else if(indexPath.row) == 4 {
+            let storybordCore = UIStoryboard(name: "Programs", bundle: nil)
+            let controlerCore = storybordCore.instantiateViewController(identifier: "Core")
+            self.navigationController?.pushViewController(controlerCore, animated: true)
         }
     }
     
@@ -61,3 +69,4 @@ class ProgramsTableViewController: UITableViewController {
         return 200
     }
 }
+
