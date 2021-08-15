@@ -47,7 +47,7 @@ class ProgramsTableViewController: UITableViewController {
             self.navigationController?.pushViewController(controllerWurmap, animated: true)
         } else if(indexPath.row) == 1 {
             let sturybordBasic = UIStoryboard(name: "Programs", bundle: nil)
-            let controlerBasic = sturybordBasic.instantiateViewController(identifier: "Basic")
+           let controlerBasic = sturybordBasic.instantiateViewController(identifier: "Basic")
             self.navigationController?.pushViewController(controlerBasic, animated: true)
         } else if(indexPath.row) == 2 {
             let storyborBody = UIStoryboard(name: "Programs", bundle: nil)

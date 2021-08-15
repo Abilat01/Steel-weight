@@ -2,16 +2,16 @@
 //  CoreTableViewCell.swift
 //  Steel weight
 //
-//  Created by Danya on 12.08.2021.
+//  Created by Danya on 15.08.2021.
 //
 
 import UIKit
 
 class CoreTableViewCell: UITableViewCell {
-    
-    
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var musculeLabel: UILabel!
+
+    @IBOutlet weak var numberImage: UIImageView!
+    @IBOutlet weak var weekLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
